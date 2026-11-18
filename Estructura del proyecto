@@ -1,0 +1,10 @@
+sistema_distribuido/
+├── main.py             # Servidor TCP concurrente, enrutamiento de mensajes y CLI interactiva
+├── consensus.py        # Motor de consenso Raft simplificado y relojes lógicos de Lamport
+├── security.py         # Autenticación RBAC, hashing con bcrypt y bloqueo por intentos fallidos
+├── storage.py          # Memoria compartida clave-valor, almacenamiento CRUD y bitácora append-only
+├── config.json         # Topología de red (IPs, puertos y banderas de rol espejo)
+├── requisitos.txt      # Dependencias externas de Python
+├── run_windows.bat     # Script de despliegue automatizado para Windows (Nodos 4 y 5)
+├── run_linux.sh        # Script de despliegue automatizado para Linux (Nodos 1, 2 y 3)
+└── README.md           # Documentación técnica del sistema
