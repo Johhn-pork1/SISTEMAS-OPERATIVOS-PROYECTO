@@ -1,0 +1,12 @@
+Prerrequisitos
+1.Instalar las dependencias en ambos sistemas operativos:
+pip install -r requisitos.txt
+2.Habilitar los puertos TCP 5001-5005 en el Firewall de Windows (PowerShell como Administrador):
+New-NetFirewallRule -DisplayName "Sistemas Distribuidos" -Direction Inbound -LocalPort 5001-5005 -Protocol TCP -Action Allow
+3.Arranque del Clúster
+3.1 En Ubuntu Linux (Nodos 1, 2 y 3):
+chmod +x run_linux.sh
+./run_linux.sh
+
+3.2 En Windows (Nodos 4 y 5):
+run_windows.bat
